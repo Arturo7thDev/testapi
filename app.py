@@ -10,7 +10,8 @@ def ping():
 
 @app.route('/suscriptions', methods=['GET'])
 def getData():
-    return jsonify(suscriptions)
+    return jsonify({"suscriptions": suscriptions})
+
 
 
 if __name__ == '__main__':
